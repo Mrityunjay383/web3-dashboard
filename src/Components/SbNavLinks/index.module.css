@@ -1,0 +1,23 @@
+.navCon{
+    flex: 1;
+}
+
+.navElements{
+    display: block;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.active{
+    color: #29AD29;
+}
+
+.navElements span{
+    margin-left: 20px;
+}
+
+.navElements:hover{
+    color: #29AD29;
+}

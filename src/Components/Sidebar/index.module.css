@@ -1,0 +1,104 @@
+.mainContainer {
+    height: 100vh;
+    background: #1A1E1C;
+    color: #FFFFFF;
+    padding: 3vh 15px;
+    min-width: 12vw;
+    border-radius: 0 25px 8px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #9DDC6D;
+    font-size: 2.2rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.top svg {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.searchCon {
+    display: flex;
+    align-items: center;
+    margin: 45px 0;
+    background: #333333;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+.searchCon input {
+    background: #333333;
+    color: #FFFFFF;
+    border: 0;
+    outline: none;
+    padding: 10px 10px;
+}
+
+.searchCon input:focus {
+    background: #333333;
+    color: #FFFFFF;
+    border-color: #000;
+}
+
+.searchCon input::placeholder {
+    color: #e5e3e3;
+}
+
+.impLinks div{
+    cursor: pointer;
+    margin: 10px 0;
+    font-size: 17px;
+}
+
+.impLinks div span{
+    margin-left: 20px;
+    color: grey;
+}
+
+.impLinks div:hover > span, .impLinks div:hover > svg{
+    color: #29AD29;
+}
+
+.userBox{
+    display: flex;
+    align-items: center;
+    margin-top: 45px;
+    background: #333333;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.userImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.userDelCon span{
+    font-size: 16px;
+    margin: 0 12px;
+    display: block;
+}
+.userDelCon span:last-child{
+    color: grey;
+    font-size: 12px;
+}
+.userBox svg{
+    cursor: pointer;
+    border-radius: 50%
+}
+
+.userBox svg:hover{
+    background: #1A1E1C;
+    box-shadow: 0 0 15px 5px #1A1E1C;
+}
