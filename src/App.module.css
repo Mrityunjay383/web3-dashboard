@@ -3,4 +3,8 @@
     background: #0B0B0B;
     color: #FFFFFF;
     font-family: "Roboto", sans-serif;
+    min-height: 100vh;
+}
+.pageContainer{
+    flex: 1;
 }

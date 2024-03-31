@@ -3,11 +3,12 @@
     background: #1A1E1C;
     color: #FFFFFF;
     padding: 3vh 15px;
-    min-width: 12vw;
+    /*min-width: 12vw;*/
     border-radius: 0 25px 8px 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: .3s all;
 }
 
 .top {
@@ -17,15 +18,23 @@
 }
 
 .logo {
-    color: #9DDC6D;
+    background-image: linear-gradient(90deg, rgba(203,220,109,1) 0%, rgba(157,220,109,1) 35%, rgba(255,248,0,1) 100%);
+    color: transparent;
+    background-clip: text;
     font-size: 2.2rem;
     text-decoration: none;
     font-weight: 700;
 }
 
-.top svg {
+.hamburgerIcon {
     font-size: 1.3rem;
     cursor: pointer;
+}
+
+.hamburgerIcon:hover {
+    box-shadow: 0 0 15px 5px #333333;
+    border-radius: 50%;
+
 }
 
 .searchCon {
@@ -55,50 +64,70 @@
     color: #e5e3e3;
 }
 
-.impLinks div{
+.impLink {
     cursor: pointer;
     margin: 10px 0;
     font-size: 17px;
 }
 
-.impLinks div span{
+.impLink span {
     margin-left: 20px;
     color: grey;
 }
 
-.impLinks div:hover > span, .impLinks div:hover > svg{
+.impLink:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+.notiCount{
+    background: #29AD29;
+    padding: 0 8px;
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000 !important;
+}
+
+.impLinks div:hover > span, .impLinks div:hover > svg {
     color: #29AD29;
 }
 
-.userBox{
+.userBox {
     display: flex;
     align-items: center;
-    margin-top: 45px;
+    margin-top: 10px;
     background: #333333;
     padding: 15px;
     border-radius: 10px;
 }
 
-.userImg{
+.userImg {
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
-.userDelCon span{
+
+.userDelCon span {
     font-size: 16px;
     margin: 0 12px;
     display: block;
 }
-.userDelCon span:last-child{
+
+.userDelCon span:last-child {
     color: grey;
     font-size: 12px;
 }
-.userBox svg{
+
+.userBox svg {
     cursor: pointer;
     border-radius: 50%
 }
 
-.userBox svg:hover{
+.userBox svg:hover {
     background: #1A1E1C;
     box-shadow: 0 0 15px 5px #1A1E1C;
 }
