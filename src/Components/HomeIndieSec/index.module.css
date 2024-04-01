@@ -1,0 +1,23 @@
+.secCon {
+    width: 25vw;
+    background: #171717;
+    padding: 20px 20px 10px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+.secCon h5{
+    border-bottom: 3px solid #333333;
+    padding-bottom: 7px;
+}
+
+.secCon .childCon{
+    flex: 1;
+}
+.secCon p{
+    margin-bottom: 0;
+    margin-top: 20px;
+    border-top: 3px solid #333333;
+    padding-top: 7px
+}

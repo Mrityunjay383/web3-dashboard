@@ -1,0 +1,9 @@
+.bodyCom {
+    margin: 3vh 25px;
+}
+
+.fRow{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
