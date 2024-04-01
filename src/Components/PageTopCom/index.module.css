@@ -35,6 +35,12 @@
     border-color: #2e942e !important;
 }
 
+.connected{
+    border: 2px solid #2AB42A;
+    padding: 5px 15px;
+    border-radius: 8px;
+}
+
 @media screen and (max-width: 430px) {
     .mainContainer {
         margin: 1vh 10px;

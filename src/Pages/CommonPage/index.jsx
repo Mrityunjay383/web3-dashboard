@@ -10,17 +10,19 @@ const CommonPage = ({ pageTitle }) => {
     <div className={classes.mainCom}>
       <h2>{pageTitle} Pages</h2>
       <div className={classes.Row}>
-        {Array.from(Array(15).keys()).map((e, i) => {
-          return (
-            <HomeCommonCard
-              key={i}
-              width={isMobile ? "47%" : "22%"}
-              height={"15vh"}
-            >
-              <div className={classes.placeholderCom}>Resource {i + 1}</div>
-            </HomeCommonCard>
-          );
-        })}
+        {Array.from(Array(Math.floor(Math.random() * 6) + 6).keys()).map(
+          (e, i) => {
+            return (
+              <HomeCommonCard
+                key={i}
+                width={isMobile ? "49%" : "22%"}
+                height={"15vh"}
+              >
+                <div className={classes.placeholderCom}>Resource {i + 1}</div>
+              </HomeCommonCard>
+            );
+          }
+        )}
       </div>
     </div>
   );

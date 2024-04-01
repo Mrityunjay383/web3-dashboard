@@ -26,3 +26,10 @@
     height: 100%;
     color: grey;
 }
+
+@media screen and (max-width: 430px) {
+    .mainCom {
+        margin: 1vh 10px 2vh;
+        padding-top: 2vh;
+    }
+}
