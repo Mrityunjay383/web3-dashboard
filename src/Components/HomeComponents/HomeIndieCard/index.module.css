@@ -1,11 +1,12 @@
 .secCon {
-    width: 25vw;
+    max-width: 100%;
     background: #171717;
     padding: 20px 20px 10px;
     border-radius: 20px;
     margin-bottom: 25px;
     display: flex;
     flex-direction: column;
+    /*max-height: 50vh;*/
 }
 .secCon h5{
     border-bottom: 3px solid #333333;

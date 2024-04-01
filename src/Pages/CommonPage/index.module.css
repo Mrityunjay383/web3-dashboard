@@ -1,0 +1,28 @@
+.mainCom{
+    margin: 3vh 25px;
+    max-height: 80%;
+    overflow-y: auto;
+}
+
+/* width */
+.mainCom::-webkit-scrollbar {
+    display: none;
+}
+
+.Row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+.placeholderCom{
+    background: #333;
+    padding: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    height: 100%;
+    color: grey;
+}

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoSearch } from "react-icons/io5";
 
@@ -11,10 +11,22 @@ import { FaRegQuestionCircle } from "react-icons/fa";
 import { MdOutlineSettings } from "react-icons/md";
 
 const Sidebar = () => {
+  const navigate = useNavigate();
+
   const [isSbOpen, setIsSbOpen] = useState(window.innerWidth > 500);
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
+
+  useEffect(() => {
+    if (isMobile) {
+      setIsSbOpen(false);
+    }
+  }, [navigate]);
 
   return (
-    <div className={classes.mainContainer}>
+    <div
+      className={classes.mainContainer}
+      style={isSbOpen && isMobile ? { position: "absolute", zIndex: 10 } : {}}
+    >
       {isSbOpen ? (
         <>
           <div className={classes.top}>

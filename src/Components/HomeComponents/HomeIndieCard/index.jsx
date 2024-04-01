@@ -2,15 +2,15 @@ import React from "react";
 
 import classes from "./index.module.css";
 
-const HomeIndieSec = ({ head, subHead, children }) => {
+const HomeIndieCard = ({ head, bottom, width, children }) => {
   return (
-    <div className={classes.secCon}>
+    <div className={classes.secCon} style={{ width }}>
       <h5>{head}</h5>
       <div className={classes.childCon}>{children}</div>
 
-      <p>{subHead}</p>
+      <p>{bottom}</p>
     </div>
   );
 };
 
-export default HomeIndieSec;
+export default HomeIndieCard;

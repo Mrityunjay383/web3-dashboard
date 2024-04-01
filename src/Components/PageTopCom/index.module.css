@@ -1,31 +1,62 @@
-.mainContainer{
+.mainContainer {
     margin: 3vh 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.head{
+
+.head {
     font-size: 40px;
     margin-bottom: 0;
     font-weight: 600;
 }
-.head span{
-    background-image: linear-gradient(90deg, rgba(203,220,109,1) 0%, rgba(157,220,109,1) 35%, rgba(255,248,0,1) 100%);
+
+.head span {
+    background-image: linear-gradient(90deg, rgba(203, 220, 109, 1) 0%, rgba(157, 220, 109, 1) 35%, rgba(255, 248, 0, 1) 100%);
     color: transparent;
     background-clip: text;
 }
-.subHead{
+
+.subHead {
     font-size: 19px;
 }
-.subHead span{
+
+.subHead span {
     color: #29AD29;
 }
-.btn{
+
+.btn {
     background: #2AB42A;
     border-color: #2AB42A;
 }
 
-.btn:active, .btn:hover{
+.btn:active, .btn:hover {
     background: #2e942e !important;
     border-color: #2e942e !important;
+}
+
+@media screen and (max-width: 430px) {
+    .mainContainer {
+        margin: 1vh 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .head {
+        font-size: 32px;
+    }
+    .subHead {
+        font-size: 18px;
+    }
+    .btn {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .head {
+        font-size: 24px;
+    }
+    .subHead {
+        font-size: 16px;
+    }
 }

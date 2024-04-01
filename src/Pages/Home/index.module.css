@@ -1,9 +1,17 @@
 .bodyCom {
     margin: 3vh 25px;
+    max-height: 80%;
+    overflow-y: auto;
 }
 
-.fRow{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+/* width */
+.bodyCom::-webkit-scrollbar {
+    display: none;
+}
+
+@media screen and (max-width: 430px) {
+    .bodyCom {
+        margin: 1vh 10px 2vh;
+        padding-top: 2vh;
+    }
 }

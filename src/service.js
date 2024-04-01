@@ -14,3 +14,7 @@ export const getPopulationData = async () => {
     "https://datausa.io/api/data?drilldowns=Nation&measures=Population"
   );
 };
+
+export const getCryptoPrices = async () => {
+  return request("GET", "https://api.coindesk.com/v1/bpi/currentprice.json");
+};

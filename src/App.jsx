@@ -6,6 +6,9 @@ import Sidebar from "./Components/Sidebar";
 
 import classes from "./App.module.css";
 import HomePage from "./Pages/Home";
+import PageTopCom from "./Components/PageTopCom";
+import React, { useState } from "react";
+import CommonPage from "./Pages/CommonPage";
 
 function App() {
   return (
@@ -13,21 +16,30 @@ function App() {
       <ToastContainer />
       <div className={classes.rootContainer}>
         <Sidebar />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <div className={classes.pageContainer}>
-                <HomePage />
-              </div>
-            }
-          />
-          <Route path="/organization" element={<div>Organization Page</div>} />
-          <Route path="/assets" element={<div>Assets Page</div>} />
-          <Route path="/trade" element={<div>Trade Page</div>} />
-          <Route path="/history" element={<div>History Page</div>} />
-          <Route path="/wallet" element={<div>Wallet Page</div>} />
-        </Routes>
+
+        <div className={classes.pageContainer}>
+          <PageTopCom />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route
+              path="/organization"
+              element={<CommonPage pageTitle={"Organization"} />}
+            />
+            <Route
+              path="/assets"
+              element={<CommonPage pageTitle={"Assets"} />}
+            />
+            <Route path="/trade" element={<CommonPage pageTitle={"Trade"} />} />
+            <Route
+              path="/history"
+              element={<CommonPage pageTitle={"History"} />}
+            />
+            <Route
+              path="/wallet"
+              element={<CommonPage pageTitle={"Wallet"} />}
+            />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
