@@ -1,9 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { GoHome, GoOrganization } from "react-icons/go";
-import { GrCube } from "react-icons/gr";
-import { FaArrowDownUpAcrossLine } from "react-icons/fa6";
-import { GiSandsOfTime } from "react-icons/gi";
-import { PiWalletLight } from "react-icons/pi";
 
 import classes from "./index.module.css";
 import { Link, useNavigate } from "react-router-dom";

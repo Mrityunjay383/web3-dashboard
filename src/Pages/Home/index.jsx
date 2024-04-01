@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 import HomeFirstRow from "../../Components/HomeComponents/HomeFirstRow";
 import HomeSecRow from "../../Components/HomeComponents/HomeSecRow";

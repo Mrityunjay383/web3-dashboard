@@ -7,7 +7,6 @@ import Sidebar from "./Components/Sidebar";
 import classes from "./App.module.css";
 import HomePage from "./Pages/Home";
 import PageTopCom from "./Components/PageTopCom";
-import React, { useState } from "react";
 import CommonPage from "./Pages/CommonPage";
 
 function App() {

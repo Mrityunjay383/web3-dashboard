@@ -72,7 +72,7 @@ const Sidebar = () => {
             <img
               className={classes.userImg}
               src={require("../../Assets/user-profile-placeholder-image.jpg")}
-              alt={"User Image"}
+              alt={"User"}
             />
             <div className={classes.userDelCon}>
               <span>Mrityunjay Vyas</span>
